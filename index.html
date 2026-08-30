@@ -159,10 +159,20 @@ td.n{color:var(--ink)}
   .in{width:76%}
   figure,.two,.mt,.op,.step{break-inside:avoid}
 }
+
+.sitenav{max-width:920px;margin:0 auto 18px;display:flex;gap:6px;align-items:center}
+.sitenav a{font-size:13px;font-weight:500;text-decoration:none;color:var(--muted);
+  padding:7px 15px;border-radius:8px;border:1px solid transparent;background:transparent}
+.sitenav a:hover{color:var(--ink)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--page);
+  border-color:var(--line);box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.sitenav a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media print{.sitenav{display:none}}
 </style>
 
 </head>
 <body>
+<nav class="sitenav"><a href="./" aria-current="page">포트폴리오</a><a href="./cover-letter.html">자기소개서</a></nav>
 <div class="doc">
 
 <!-- ═══ 1. 나 ═══ -->
@@ -857,6 +867,5 @@ td.n{color:var(--ink)}
 </section>
 
 </div>
-
 </body>
 </html>
